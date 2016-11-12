@@ -1,0 +1,4 @@
+﻿  AVL.cpp
+c:\users\mattm_000\documents\visual studio 2015\projects\cs2420\treeavl\treeavl\avl.cpp(182): warning C4715: 'AVL::updateHeight': not all control paths return a value
+  TreeAVL.vcxproj -> c:\users\mattm_000\documents\visual studio 2015\Projects\CS2420\TreeAVL\Debug\TreeAVL.exe
+  TreeAVL.vcxproj -> c:\users\mattm_000\documents\visual studio 2015\Projects\CS2420\TreeAVL\Debug\TreeAVL.pdb (Partial PDB)
