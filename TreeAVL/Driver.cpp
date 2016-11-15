@@ -1,7 +1,7 @@
 // CS2420 Programming Project #07
 // Copyright 2014, Utah Valley University
 //Author: Matthew Vaughan
-// Date last modified: Oct 2016
+// Date last modified: Nov 2016
 // Header file for main - constants and function prologues
 // =================================================
 
@@ -11,7 +11,6 @@ the Standard - Template Library.I understand that any violation of this
 disclaimer will result in a 0 for the project.*/
 
 #include "AVL.h"
-
 
 void print_menu();
 char get_user_command();

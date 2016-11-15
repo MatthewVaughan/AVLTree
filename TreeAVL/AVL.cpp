@@ -1,6 +1,7 @@
 #include "AVL.h"
+#include <string>
 
-
+using namespace std;
 
 AVL::AVL()
 {
@@ -31,21 +32,27 @@ void AVL::PrintTree()
 	}
 	else
 	{
-
-		PrintTreeH(root);
+		int depth = 0;
+		PrintTreeH(root, depth);
 	}
 }
 
-void AVL::PrintTreeH(Node* temp)
+string AVL::tab(int depth)
 {
+	string arr[10] = { " ", "  ", "   ", "    ", "     ", "      ", "       ", "        ", "         ", "          " };
+	return arr[depth];
+}
+
+void AVL::PrintTreeH(Node* temp, int depth)
+{
+	cout << tab(depth) << temp->data << endl;
 	if (temp->leftChild != nullptr)
 	{
-		PrintTreeH(temp->leftChild);
+		PrintTreeH(temp->leftChild, depth+1);
 	}
-	cout << temp->data << endl;
 	if (temp->rightChild != nullptr)
 	{
-		PrintTreeH(temp->rightChild);
+		PrintTreeH(temp->rightChild, depth+1);
 	}
 }
 
